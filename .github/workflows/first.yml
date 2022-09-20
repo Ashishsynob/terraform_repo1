@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, Ashish nice to meet you buddy!
   job2:
   # this is the second build.
-    needs: build1
+    needs: job1
     runs-on: windows-latest
     steps:
       - name: second command
