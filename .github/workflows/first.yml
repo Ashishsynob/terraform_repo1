@@ -1,6 +1,6 @@
 name: learning_workflow
 env: 
-  day: "Monday"
+  new_day: Monday
 on:
   push:
     branches: [ "main" ]
@@ -9,8 +9,8 @@ on:
   workflow_dispatch:
 jobs:
   job1:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: first run command 
-        run: echo $day
+        run: echo $new_day
