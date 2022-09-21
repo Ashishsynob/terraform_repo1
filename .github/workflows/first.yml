@@ -1,6 +1,6 @@
 name: learning_workflow
 env: 
-  week_day : "Monday"
+  week_day: "Monday"
 on:
   push:
     branches: [ "main" ]
@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: first run command 
-        run: echo hello guys enjoy your $week_day
+        run: echo "hello guys enjoy your $week_day"
