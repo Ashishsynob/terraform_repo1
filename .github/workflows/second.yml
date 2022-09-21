@@ -4,15 +4,16 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-    # this workflow dispatch will allow you to trigger the workflow manually.
-  workflow_dispatch:
 jobs:
-  runs-on: ubuntu-latest
   task1:
-      name: Task for hybernation 
-      run: echo this is my second own hand made codefor workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: Task for hybernation 
+        run: echo this is my second own hand made codefor workflow
     # this will end the task here.
   task2:
-      name: Task for procastination 
-      runs: echo hey! buddy welcome to my workflow 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Task for procastination 
+        run: echo hey! buddy welcome to my workflow 
     # this task ends here.
