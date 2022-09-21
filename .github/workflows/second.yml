@@ -1,8 +1,8 @@
 name: Brooklyn_task
 on:
   push:
-    workflow_dispatch: first
-  pull_request:
+    
+  pull_request: 
     branches: [main]
 jobs:
   task1:
@@ -17,4 +17,3 @@ jobs:
       - name: Task for procastination 
         run: echo hey! buddy welcome to my workflow 
     # this task ends here.
-    
