@@ -28,7 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: first run command 
-        run: echo Hello, Ashish nice to meet you buddy! enjoy your $week_day
+        run: echo $week_day
   job2:
   # this is the second build.
     needs: job1
