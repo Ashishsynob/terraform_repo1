@@ -1,5 +1,5 @@
-a = 24
+a = 30
 b = 12
-c = round(a % b)
-c = c * c
-print("the square remainder of the value is: ",c)
+c = round(a / b)
+c1 = c * c
+print("the square remainder of the value is: ",c1)
