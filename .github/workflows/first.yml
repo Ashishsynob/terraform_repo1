@@ -16,4 +16,4 @@ jobs:
         with: 
           python-version: '3.10'
       - name: getting the two number's remainer square 
-        run: first_python.py
+        run: python first_python.py
